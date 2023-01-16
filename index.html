@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="/images/logo.svg" alt="logo">
+      </div>
+      <ul class="links">
+        <li class="link-item link-item-feature">
+          <a href="#">Features</a>
+          <div class="caret-container">
+            <img src="/images/icon-arrow-down.svg" alt="arrow-down" class="arrow-down caret-item" id="feature-down">
+            <img src="/images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up caret-item" id="feature-up">
+          </div>
+          <ul class="dropdown-menu dd-feature">
+            <li class="dropdown-menu-item">
+              <img src="/images/icon-todo.svg" alt="Todo">
+              <a href="#" class="dropdown-item">Todo List</a>
+            </li>
+            <li class="dropdown-menu-item">
+              <img src="/images/icon-calendar.svg" alt="Calendar">
+              <a href="#" class="dropdown-item">Calendar</a>
+            </li>
+            <li class="dropdown-menu-item">
+              <img src="/images/icon-reminders.svg" alt="Reminders">
+              <a href="#" class="dropdown-item">Reminders</a>
+            </li>
+            <li class="dropdown-menu-item">
+              <img src="/images/icon-planning.svg" alt="Planning">
+              <a href="#" class="dropdown-item">Planning</a>
+            </li>
+          </ul>
+        </li>
+        <li class="link-item link-item-company">
+          <a href="#">Company</a>
+          <div class="caret-container">
+            <img src="/images/icon-arrow-down.svg" alt="arrow-down" class="arrow-down caret-item" id="company-down">
+            <img src="/images/icon-arrow-up.svg" alt="arrow-up" class="arrow-up caret-item" id="company-up">
+          </div>
+          <ul class="dropdown-menu dd-company">
+            <li class="dropdown-menu-item">
+              <a href="#" class="dropdown-item">History</a>
+            </li>
+            <li class="dropdown-menu-item">
+              <a href="#" class="dropdown-item">Our Team</a>
+            </li>
+            <li class="dropdown-menu-item">
+              <a href="#" class="dropdown-item">Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="link-item">
+          <a href="#">Careers</a>
+        </li>
+        <li class="link-item">
+          <a href="#">About</a>
+        </li>
+        <div class="form-container">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="register">Register</a>
+        </div>
+      </ul>
+      <button class="btn-container">
+        <img src="/images/icon-menu.svg" alt="menu-btn" class="menu-open">
+        <img src="/images/icon-close-menu.svg" alt="close-menu-btn" class="menu-close">
+      </button>
+    </nav>
+  </header>
+  <main>
+    <aside>
+      <div class="banner-tag-container">
+        <h1 class="banner-tag-title">
+          Make remote work
+        </h1>
+        <p class="banner-tag-paragraph">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="#" class="banner-tag-btn">
+          Learn more
+        </a>
+        <div class="banner-tag-img">
+          <img src="/images/client-databiz.svg" alt="client-databiz" class="banner-tag-img-item">
+          <img src="/images/client-audiophile.svg" alt="client-audiophile" class="banner-tag-img-item">
+          <img src="/images/client-meet.svg" alt="client-meet" class="banner-tag-img-item">
+          <img src="/images/client-maker.svg" alt="client-maker" class="banner-tag-img-item">
+        </div>
+      </div>
+    </aside>
+    <div class="banner-container">
+      <img src="/images/image-hero-desktop.png" alt="image-hero-desktop" class="desktop-hero">
+      <img src="/images/image-hero-mobile.png" alt="image-hero-mobile" class="mobile-hero">
+    </div>
+  </main>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+    defer></script> -->
+  <script src="script.js" defer></script>
+</body>
+
+</html>
